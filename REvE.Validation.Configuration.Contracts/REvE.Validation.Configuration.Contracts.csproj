@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;net471;net472;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.5-beta</Version>
+    <Authors>Ian Schlarman</Authors>
+    <Copyright>Copyright ©2019 Ian Schlarman</Copyright>
+    <Description>Contains contracts used by the Rule Evaluation Engine Validation component to resolve Configuration implementations.</Description>
+    <PackageTags>REvE RuleEvaluationEngine RuleEngine ValidationFramework ConfigurationContracts</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Added GitHub source code references, Repository Information, and SourceLink support.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/kaylerich/reve-validation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kaylerich/reve-validation.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="REvE.Configuration" Version="1.0.3" />
+    <PackageReference Include="REvE.Validation.Configuration.Models" Version="1.0.3" />
+  </ItemGroup>
+
+</Project>
