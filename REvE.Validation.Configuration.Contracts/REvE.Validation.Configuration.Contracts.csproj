@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net47;net471;net472;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.5-beta</Version>
+    <Version>1.0.5-beta2</Version>
     <Authors>Ian Schlarman</Authors>
     <Copyright>Copyright ©2019 Ian Schlarman</Copyright>
     <Description>Contains contracts used by the Rule Evaluation Engine Validation component to resolve Configuration implementations.</Description>
@@ -26,6 +26,7 @@
   <ItemGroup>
     <PackageReference Include="REvE.Configuration" Version="1.0.3" />
     <PackageReference Include="REvE.Validation.Configuration.Models" Version="1.0.3" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All"/>
   </ItemGroup>
 
 </Project>
