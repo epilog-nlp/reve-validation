@@ -1,0 +1,34 @@
+{
+  "RuleDefinitions": [
+    {
+      "Type": "MinLength",
+      "Rule": "Company.Name.MinLength=1"
+    },
+    {
+      "Type": "MaxLength",
+      "Rule": "Company.Name.MaxLength=10"
+    },
+    {
+      "Type": "MaxLength",
+      "Rule": "Company.Desc.MaxLength=10"
+    },
+    {
+      "Type": "StringLength",
+      "Rule": "BU.Name.MinLength=1"
+    },
+    {
+      "Type": "StringLength",
+      "Rule": "BU.Name.MaxLength=10"
+    },
+    {
+      "Type": "Regex",
+      "Name": "BusinessUnitRegexRule1",
+      "Rule": "BU.Desc.Pattern=^[a-zA-Z''-'\\s]{1,40}$"
+    },
+    {
+      "Type": "Regex",
+      "Name": "BusinessUnitRegexRule2",
+      "Rule": "BU.Desc.Pattern=^[a-zA-Z''-'\\s]{1,40}$"
+    }
+  ]
+}

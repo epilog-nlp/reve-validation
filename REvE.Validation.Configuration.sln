@@ -5,7 +5,13 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REvE.Validation.Configuration.Models", "REvE.Validation.Configuration.Models\REvE.Validation.Configuration.Models.csproj", "{C7CED0F4-9360-413E-B81D-DB0444061AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REvE.Validation.Configuration.Contracts", "REvE.Validation.Configuration.Contracts\REvE.Validation.Configuration.Contracts.csproj", "{ACC6F786-3BE5-4064-9BF6-CD856647047F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REvE.Validation.Configuration.Contracts", "REvE.Validation.Configuration.Contracts\REvE.Validation.Configuration.Contracts.csproj", "{ACC6F786-3BE5-4064-9BF6-CD856647047F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REvE.Validation.Configuration", "REvE.Validation.Configuration\REvE.Validation.Configuration.csproj", "{AE667043-0E0E-4175-9132-7CEDD4FA954E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REvE.Validation.Configuration.Tests", "REvE.Validation.Configuration.Tests\REvE.Validation.Configuration.Tests.csproj", "{BDE92426-9DC0-47E0-96EE-8417969742C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REvE.Validation.Configuration.Package.Tests", "REvE.Validation.Configuration.Package.Tests\REvE.Validation.Configuration.Package.Tests.csproj", "{42330F86-513F-4E02-9A52-31E4AAC1475F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{ACC6F786-3BE5-4064-9BF6-CD856647047F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACC6F786-3BE5-4064-9BF6-CD856647047F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACC6F786-3BE5-4064-9BF6-CD856647047F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE667043-0E0E-4175-9132-7CEDD4FA954E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE667043-0E0E-4175-9132-7CEDD4FA954E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE667043-0E0E-4175-9132-7CEDD4FA954E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE667043-0E0E-4175-9132-7CEDD4FA954E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE92426-9DC0-47E0-96EE-8417969742C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE92426-9DC0-47E0-96EE-8417969742C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE92426-9DC0-47E0-96EE-8417969742C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE92426-9DC0-47E0-96EE-8417969742C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42330F86-513F-4E02-9A52-31E4AAC1475F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42330F86-513F-4E02-9A52-31E4AAC1475F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42330F86-513F-4E02-9A52-31E4AAC1475F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42330F86-513F-4E02-9A52-31E4AAC1475F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

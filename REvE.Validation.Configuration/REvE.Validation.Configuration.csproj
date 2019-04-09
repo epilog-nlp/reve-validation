@@ -6,8 +6,8 @@
     <Version>1.0.4</Version>
     <Authors>Ian Schlarman</Authors>
     <Copyright>Copyright ©2019 Ian Schlarman</Copyright>
-    <Description>Contains configuration models used by the validation component of the Rule Evaluation Engine.</Description>
-    <PackageTags>REvE RuleEvaluationEngine RuleEngine ValidationFramework ConfigurationModels</PackageTags>
+    <Description>Contains contract implementations for the configuration components of the Rule Evaluation Engine Validation Framework.</Description>
+    <PackageTags>REvE RuleEvaluationEngine RuleEngine ValidationFramework ConfigurationImplementations</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -24,8 +24,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="REvE.Models" Version="1.0.3" />
+    <PackageReference Include="REvE.Configuration" Version="1.0.4" />
+    <PackageReference Include="REvE.Validation.Configuration.Contracts" Version="1.0.5" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="4.5.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All"/>
   </ItemGroup>
-
+  
 </Project>
