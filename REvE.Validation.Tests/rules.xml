@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RuleArgumentConfig>
+  <RuleDefinitions>
+    <Def type="MinLength">Company.Name.MinLength=1</Def>
+    <Def type="MaxLength">Company.Name.MaxLength=10</Def>
+    <Def type="MaxLength">Company.Desc.MaxLength=10</Def>
+    <Def type="StringLength">BU.Name.MinLength=1</Def>
+    <Def type="StringLength">BU.Name.MinLength=10</Def>
+    <Def type="Regex" name="BusinessUnitRegexRule1">BU.Desc.Pattern=^[a-zA-Z''-'\\s]{1,40}$</Def>
+    <Def type="Regex" name="BusinessUnitRegexRule2">BU.Desc.Pattern=^[a-zA-Z''-'\\s]{1,40}$</Def>
+  </RuleDefinitions>
+</RuleArgumentConfig>

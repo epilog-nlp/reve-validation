@@ -1,0 +1,93 @@
+{
+  "Models": [
+    {
+      "Name": "company",
+      "Alias": null,
+      "Properties": [
+        {
+          "Name": "Id",
+          "Rules": [
+            {
+              "Type": "Required",
+              "Error": "Test Error Message",
+              "Technical": "Test Technical Description",
+              "Friendly" :  "Test Friendly Description"
+            }
+          ]
+        },
+        {
+          "Name": "Name",
+          "Rules": [
+            {
+              "Type": "Required",
+              "Error": "Test Error Message",
+              "Technical": "Test Technical Description"
+            },
+            {
+              "Type": "MinLength"
+            },
+            {
+              "Type": "MaxLength"
+            }
+          ]
+        },
+        {
+          "Name": "Desc",
+          "Rules": [
+            {
+              "Type": "MaxLength",
+              "Friendly": "Test Friendly Description"
+            }
+          ]
+        },
+        {
+          "Name": "BusinessUnits"
+        }
+      ]
+    },
+    {
+      "Name": "businessunit",
+      "Alias": "bu",
+      "Properties": [
+        {
+          "Name": "Id",
+          "Rules": [
+            {
+              "Type": "Required",
+              "Technical": "Test Technical Description",
+              "Friendly": "Test Friendly Description"
+            }
+          ]
+        },
+        {
+          "Name": "Name",
+          "Rules": [
+            {
+              "Type": "Required",
+              "Error": "Test Error Message"
+            },
+            {
+              "Type": "StringLength"
+            }
+          ]
+        },
+        {
+          "Name": "Desc",
+          "Rules": [
+            {
+              "Type": "Regex",
+              "Name": "BusinessUnitRegexRule1"
+            },
+            {
+              "Type": "Regex",
+              "Name": "BusinessUnitRegexRule2",
+              "Error": "Test Error Message",
+              "Technical": "Test Technical Description",
+              "Friendly": "Test Friendly Description"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

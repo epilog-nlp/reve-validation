@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ValidationModelConfig>
+  <Models>
+    <Model name="company">
+      <Properties>
+        <Property name="Id">
+          <Rules>
+            <Rule type="Required">
+              <Error>Test Error Message</Error>
+              <Technical>Test Technical Description</Technical>
+              <Friendly>Test Friendly Description</Friendly>
+            </Rule>
+          </Rules>
+        </Property>
+        <Property name="Name">
+          <Rules>
+            <Rule type="Required">
+              <Type>Required</Type>
+              <Error>Test Error Message</Error>
+              <Technical>Test Technical Description</Technical>
+            </Rule>
+            <Rule type="MinLength"/>
+            <Rule type="MaxLength"/>
+          </Rules>
+        </Property>
+        <Property name="Desc">
+          <Rules>
+            <Rule type="MaxLength">
+              <Friendly>Test Friendly Description</Friendly>
+            </Rule>
+          </Rules>
+        </Property>
+        <Property name="BusinessUnits"/>
+      </Properties>
+    </Model>
+    <Model name="businessunit" alias="bu">
+      <Properties>
+        <Property name="Id">
+          <Rules>
+            <Rule type="Required">
+              <Technical>Test Technical Description</Technical>
+              <Friendly>Test Friendly Description</Friendly>
+            </Rule>
+          </Rules>
+        </Property>
+        <Property name="Name">
+          <Rules>
+            <Rule type="Required">
+              <Error>Test Error Message</Error>
+            </Rule>
+            <Rule type="StringLength"/>
+          </Rules>
+        </Property>
+        <Property name="Desc">
+          <Rules>
+            <Rule type="Regex" name="BusinessUnitRegexRule1"/>
+            <Rule type="Regex" name="BusinessUnitRegexRule2">
+              <Error>Test Error Message</Error>
+              <Technical>Test Technical Description</Technical>
+              <Friendly>Test Friendly Description</Friendly>
+            </Rule>
+          </Rules>
+        </Property>
+      </Properties>
+    </Model>
+  </Models>
+</ValidationModelConfig>
